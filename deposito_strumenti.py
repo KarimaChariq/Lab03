@@ -1,7 +1,14 @@
 class DepositoStrumenti:
     def __init__(self, nome, responsabile):
         """Inizializza gli attributi e le strutture dati"""
-        # TODO
+        self.nome = nome
+        self.responsabile = responsabile
+        self.strumenti={}
+        self.prestiti={}
+        self.ultimo_id_strumento = 0
+        self.ultimo_id_prestito = 0
+
+
 
     def carica_file_strumenti(self, file_path):
         """Carica gli strumenti dal file"""
